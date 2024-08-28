@@ -73,9 +73,13 @@ const getWeatherInfo = () => {
     // HTML for weather details
     const weatherHTML = `
       <div class="weather__details__text">
-        <h2 class="weather__details__text__title">${data.locationName} (${data.date})</h2>
+        <h2 class="weather__details__text__title">${data.locationName} (${
+      data.date
+    })</h2>
         <h4 class="weather__details__text__temperature">
-          <i class="fa-solid fa-temperature-three-quarters"></i>: ${Math.floor((data.temp * 9) / 5 + 32)}° F
+          <i class="fa-solid fa-temperature-three-quarters"></i>: ${Math.floor(
+            (data.temp * 9) / 5 + 32
+          )}° F
         </h4>
         <h4 class="weather__details__text__wind">
           <i class="fa-solid fa-wind"></i>: ${data.windSpeed} M/S
