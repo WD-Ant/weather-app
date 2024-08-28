@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Moderustic", sans-serif;
+}
+
+/* General Styles */
+
+body {
+  background-color: rgb(174, 208, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* PM Information */
+.pm__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pm__text__para {
+  text-align: center;
+  line-height: 1.5;
+  display: none;
+  width: 100%;
+}
+
+.pm__text__btn {
+  background-color: rgb(29, 118, 252);
+  border: none;
+  padding: 12px 0px;
+  width: 125px;
+  color: white;
+  font-weight: 400;
+  transition: 0.2s ease-in-out;
+}
+
+.pm__text__btn:hover {
+  background-color: rgb(28, 106, 223);
+}
+
+
+/* User Input Information */
+.information__name {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.information__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.information__details__title {
+  font-size: 1.2rem;
+}
+
+.information__details__input {
+  padding: 15px 15px;
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.information__details__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.information__details__btn {
+  padding: 12px 20px;
+  color: white;
+  font-weight: 400;
+  transition: 0.2s ease-in-out;
+}
+
+.information__details__btn__search {
+  background-color: rgb(84, 214, 84);
+  border: none;
+}
+
+.information__details__btn__search:hover {
+  background-color: rgb(69, 194, 69);
+}
+
+/* Weather Information */
+.weather__details {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(33, 22, 97);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather__details__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.weather__details__text__title {
+  font-weight: 600;
+  color: #fff;
+}
+
+.weather__details__text__temperature,
+.weather__details__text__wind,
+.weather__details__text__humidity {
+  background-color: rgb(240, 239, 239);
+  padding: 30px 15px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+}
+
+.weather__details__icon__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin-left: 2.35rem;
+}
+
+.weather__details__icon {
+  width: 100%;
+}
+
+.weather__details__icon__title {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information__details__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .weather__details {
+    flex-direction: column-reverse;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .weather__details__icon__wrapper {
+    width: 200px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather__details__icon {
+    width: 80%;
+  }
+
+  .weather__details__icon__title {
+    font-size: 1.1rem;
+  }
+  .weather__details__text {
+    display: flex;
+  }
+
+  .weather__details__text__title {
+    font-size: 1.3rem;
+  }
+
+  .pm__text {
+    max-width: 300px;
+    padding: 15px;
+  }
+}
