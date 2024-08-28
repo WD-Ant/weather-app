@@ -12,7 +12,7 @@ const getWeatherInfo = () => {
     }
 
     // General Location API URL
-    const API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${locationInput}&limit=1&appid=${API_KEY}`;
+    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${locationInput}&limit=1&appid=${API_KEY}`;
 
     fetch(API_URL)
       .then((res) => {
